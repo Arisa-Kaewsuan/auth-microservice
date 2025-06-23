@@ -1,0 +1,10 @@
+# Always use LF for Go source and config files
+*.go     text eol=lf
+go.mod   text eol=lf
+go.sum   text eol=lf
+
+# Optional: force LF for common config and shell files
+*.sh     text eol=lf
+*.yml    text eol=lf
+*.yaml   text eol=lf
+*.md     text eol=lf 
