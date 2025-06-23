@@ -13,8 +13,8 @@ type Config struct {
 
 func New() *Config {
 	return &Config{
-		Port:      getEnv("PORT", "50051"),
-		MongoURI:  getEnv("MONGO_URI", "mongodb://admin:password123@localhost:27017"),
+		Port:      getEnv("PORT", "50052"),
+		MongoURI:  getEnv("MONGO_URI", "mongodb://localhost:27017"),
 		DBName:    getEnv("DB_NAME", "auth_microservice"),
 		JWTSecret: getEnv("JWT_SECRET", "your-super-secret-key-change-in-production"),
 	}
