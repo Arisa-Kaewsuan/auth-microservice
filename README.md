@@ -1,4 +1,3 @@
-
 # Authentication Microservice 
 
 เป็นระบบยืนยันตัวตนที่ถูกพัฒนาขึ้นเพื่อให้บริการเกี่ยวกับการจัดการผู้ใช้และการยืนยันตัวตน โดยสร้างเป็น microservice แยกต่างหากจากส่วนอื่นๆ ของระบบ ช่วยให้สามารถนำไปใช้ซ้ำในโปรเจคอื่นๆ และสามารถ scale ได้อย่างอิสระ
@@ -50,7 +49,8 @@ Register API Flow
 6. บันทึกข้อมูลผู้ใช้ลงในฐานข้อมูล
 7. ส่งผลลัพธ์กลับไปยังผู้ใช้
 ```
-![Register](./images/register.png)
+![register](https://github.com/user-attachments/assets/9c658ed8-34b1-4b82-9e55-765def8e0ac9)
+
 
 ```
 Login API Flow
@@ -63,6 +63,7 @@ Login API Flow
 6. ที่มีข้อมูลผู้ใช้และกำหนดเวลาหมดอายุ
 7. ส่ง token กลับไปยังผู้ใช้
 ```
+![login](https://github.com/user-attachments/assets/4d11d143-6096-49fb-ab05-5d8c21a4dbce)
 
 ```
 Logout API Flow
@@ -73,6 +74,7 @@ Logout API Flow
 4. เพิ่ม token ปัจจุบันเข้าไปใน blacklist หรือยกเลิกการใช้งาน
 5. ส่งผลลัพธ์การออกจากระบบสำเร็จ
 ```
+![logout](https://github.com/user-attachments/assets/192735eb-961a-4e3f-a598-b6bd0f313439)
 
 ```
 User-List API Flow
@@ -133,6 +135,7 @@ User-Delete API Flow (Soft Delete)
 **Authentication และ Authorization :** เข้าใจความแตกต่างระหว่าง Authentication (การยืนยันตัวตน) และ Authorization (การตรวจสอบสิทธิ์) มากขึ้น Authentication คือการตรวจสอบว่าผู้ใช้เป็นใคร โดยใช้ข้อมูลเช่น email และ password ส่วน Authorization คือการตรวจสอบว่าผู้ใช้มีสิทธิ์ทำอะไรได้บ้าง  
 ได้เรียนรู้การใช้ JWT (JSON Web Tokens) สำหรับการจัดการ session แบบ stateless ซึ่งช่วยให้ระบบ scale ได้ง่ายและไม่ต้องเก็บข้อมูล session ในฐานข้อมูล
 
+<br><br>
 ## If you want to try running this project on your machine, how do you do it?
 ถ้าอยากลองเอา project นี้ไปรันบนเครื่องของคุณ ให้ทำตามนี้ 
 1. ติดตั้ง Prerequisites:
